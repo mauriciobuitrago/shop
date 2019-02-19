@@ -11,6 +11,8 @@ namespace shop.Web.Data.Entities
     {
         public int Id { get; set; }
 
+        [MaxLength(50,ErrorMessage ="the field {0} only can  conain {1} characters lenght.")]
+        [Required]
         public string Name { get; set; }
 
         // this is for the format of the money colombian
@@ -20,11 +22,13 @@ namespace shop.Web.Data.Entities
         [Display(Name = "Image")]
         public string ImageUrl { get; set; }
 
-        [Display(Name = "Last Purchase")]
-        public DateTime LastPurchase { get; set; }
 
+        [Display(Name = "Last Purchase")]
+        public DateTime? LastPurchase { get; set; }
+
+        // this ?-> is for the data is null
         [Display(Name = "Last Sale")]
-        public DateTime LastSale { get; set; }
+        public DateTime? LastSale { get; set; }
 
         [Display(Name = "Is Availabe?")]
         public bool IsAvailabe { get; set; }
