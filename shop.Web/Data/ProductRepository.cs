@@ -1,6 +1,7 @@
 ﻿
 namespace shop.Web.Data
 {
+    using System.Threading.Tasks;
     using Entities;
 
     public class ProductRepository : GenericRepository<Product>, IProductRepository
@@ -8,6 +9,8 @@ namespace shop.Web.Data
         public ProductRepository(DataContext context) : base(context)
         {
         }
+
+      
     }
 
 }
