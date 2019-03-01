@@ -40,5 +40,22 @@ namespace shop.Web.Data.Entities
 
         public User User { get; set; }
 
+        //only propierty of read
+        public string ImageFullPath
+        { get
+            {
+                if(string.IsNullOrEmpty(this.ImageUrl))
+                {
+                    return null;
+
+                }
+                //interpolation, is concatened is equal that  $"
+                // "https://shopmaufenix.azurewebsites.net" + this.ImageUrl.Substring(1)";
+
+                return $"https://shopmaufenix.azurewebsites.net/{this.ImageUrl.Substring(1)}";
+            }
+
+        }
+
     }
 }

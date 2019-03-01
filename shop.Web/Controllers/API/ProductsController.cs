@@ -20,7 +20,7 @@ namespace shop.Web.Controllers.API
         public IActionResult GetProducts()
         {
             // envuelve el resultado en un JSON de los productos que tenemos.
-            return Ok(this.productRepository.GetAll());
+            return Ok(this.productRepository.GetAllWithUsers());
         }
     }
 }
