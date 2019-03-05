@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28531.58
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shop.Common", "shop.Common\shop.Common.csproj", "{DF2FF287-2A1B-43E2-B7B6-A721CA0A025F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shop.Common", "shop.Common\shop.Common.csproj", "{DF2FF287-2A1B-43E2-B7B6-A721CA0A025F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{12A5D7B1-C284-4F1E-BBC0-2D8A543E58E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{244AF0DF-01A9-4316-AA65-0B9D8B61CCE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shop.Web", "shop.Web\shop.Web.csproj", "{70D76A9F-9C9F-49EA-8BC1-BD895B806317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shop.Web", "shop.Web\shop.Web.csproj", "{70D76A9F-9C9F-49EA-8BC1-BD895B806317}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{87F64D5D-9A2A-414A-AB82-169220B35E9B}"
 EndProject
@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shop.UIForms.Android", "sho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shop.UIForms.iOS", "shop.UIForms\shop.UIForms.iOS\shop.UIForms.iOS.csproj", "{458DCDC0-F4DA-4668-B8F8-EF7B2ED5032C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shop.UIForms", "shop.UIForms\shop.UIForms\shop.UIForms.csproj", "{9C25B242-6083-44E8-93ED-5CEB923FDC1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.UIForms", "shop.UIForms\shop.UIForms\Shop.UIForms.csproj", "{9C25B242-6083-44E8-93ED-5CEB923FDC1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shop.UIClassic", "shop.UIClassic\shop.UIClassic.csproj", "{6C8E228B-DD06-4579-A84D-191BA2634909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shop.UIClassic", "shop.UIClassic\shop.UIClassic.csproj", "{6C8E228B-DD06-4579-A84D-191BA2634909}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shop.UIClassic.Android", "shop.UIClassic.Android\shop.UIClassic.Android.csproj", "{A5C0144D-F9BF-4F30-980F-545403A53FAF}"
 EndProject
