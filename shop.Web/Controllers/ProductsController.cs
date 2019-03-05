@@ -66,10 +66,13 @@ namespace shop.Web.Controllers
 
                 if (view.ImageFile != null && view.ImageFile.Length > 0)
                 {
+                    var guid = Guid.NewGuid().ToString();
+                    var file = $"{guid}.jpg";
+
                     path = Path.Combine(
                         Directory.GetCurrentDirectory(), 
                         "wwwroot\\images\\Products", 
-                        view.ImageFile.FileName);
+                          file);
                     //path is a rute complete
                     using (var stream = new FileStream(path, FileMode.Create))
                     {
@@ -77,7 +80,7 @@ namespace shop.Web.Controllers
                         await view.ImageFile.CopyToAsync(stream);
                     }
                     //~ is autocomplete la rute 
-                    path = $"~/images/Products/{view.ImageFile.FileName}";
+                    path = $"~/images/Products/{file}";
                 }
                 var product = this.ToProduct(view, path);
 
@@ -164,17 +167,18 @@ namespace shop.Web.Controllers
                     {
                         var guid = Guid.NewGuid().ToString();
                         var file = $"{guid}.jpg";
-                         
+
                         path = Path.Combine(
                             Directory.GetCurrentDirectory(),
                             "wwwroot\\images\\Products",
-                            file);
-
+                              file);
+                        //path is a rute complete
                         using (var stream = new FileStream(path, FileMode.Create))
                         {
+                            //take all content and record stream
                             await view.ImageFile.CopyToAsync(stream);
                         }
-
+                        //~ is autocomplete la rute 
                         path = $"~/images/Products/{file}";
                     }
 
