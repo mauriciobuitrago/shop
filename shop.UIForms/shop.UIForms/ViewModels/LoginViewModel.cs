@@ -11,7 +11,7 @@ namespace Shop.UIForms.ViewModels
     public class LoginViewModel 
     {
 
-        public string Email { get; set; }
+        public string Email { get; set; } 
         public string Password { get; set; }
 
         public ICommand LoginCommand => new RelayCommand(Login);
@@ -46,11 +46,11 @@ namespace Shop.UIForms.ViewModels
 
             }
 
-            if (this.Email.Equals("maob14@gmail.com") || this.Password.Equals("123456"))
+            if (!this.Email.Equals("maob14@gmail.com") && this.Password.Equals("123456"))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                 "OK",
-                 "User Good",
+                 "Error",
+                 "User incorrect",
                  "Accept");
 
 
@@ -62,6 +62,7 @@ namespace Shop.UIForms.ViewModels
                     "OK",
                     "Fuck yeah",
                     "Accept");*/
+
             MainViewModel.GetInstance().Products = new ProductsViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new ProductsPage());
         }

@@ -1,11 +1,13 @@
 ﻿
+
 namespace Shop.UIForms.ViewModels
 {
-    using shop.Common.Models;
-    using shop.Common.Services;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using shop.Common.Models;
+    using shop.Common.Services;
     using Xamarin.Forms;
+
 
     public class ProductsViewModel : BaseViewModel
     {

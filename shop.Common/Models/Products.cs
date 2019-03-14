@@ -35,6 +35,10 @@ namespace shop.Common.Models
 
         [JsonProperty("imageFullPath")]
         public Uri ImageFullPath { get; set; }
-    }
+
+        public override string ToString()
+        {
+            return $"{this.Name}{this.Price:C2}";
+        }    }
 }
 
