@@ -13,6 +13,7 @@ namespace shop.Web
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.IdentityModel.Tokens;
+    using shop.Web.Data.Repositories;
     using System.Text;
 
     public class Startup
@@ -65,7 +66,7 @@ namespace shop.Web
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICountrytRepository, CountrytRepository>();
             services.AddScoped<IUserHelper, UserHelper>();
-
+            services.AddScoped<IOrderRepository, OrderRepository>();
 
 
             services.Configure<CookiePolicyOptions>(options =>
